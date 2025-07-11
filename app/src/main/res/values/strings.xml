@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">LinternaUX</string>
+
+
+    <!--  COLORS APP  -->
+    <color name="colorIcons1">@color/gris7</color>
+    <color name="colorIcons2">@color/gris10</color>
+    <color name="colorIcons3">@color/white</color>
+    <color name="colorIcons4">@color/gris14</color>
+    <color name="colorNotificationBar1">@color/gris14</color>
+    <color name="colorNotificationBar2">@color/white</color>
+    <color name="colorNavigationBar1">@color/colorNotificationBar1</color>
+    <color name="colorNavigationBar2">@color/colorNotificationBar2</color>
+    <color name="colorBackground1">@color/gris14</color>
+    <color name="colorBackground2">@color/white</color>
+
+    <!--  SIZES APP  -->
+    <dimen name="sizeSmall">14sp</dimen>
+    <dimen name="sizeNormal">16sp</dimen>
+    <dimen name="sizeBig">18sp</dimen>
+    <dimen name="sizeIconSmall">30sp</dimen>
+    <dimen name="sizeIconNormal">45sp</dimen>
+    <dimen name="sizeIconBig">120sp</dimen>
+
+    <!--  ICONS APP  -->
+    <drawable name="iconPower">@drawable/icon_power</drawable>
+    <drawable name="iconPowerOn">@drawable/icon_power_on</drawable>
+    <drawable name="iconPhone">@drawable/icon_phone_portrait</drawable>
+    <drawable name="iconMenu">@drawable/icon_menu</drawable>
+    <drawable name="iconMenuDots">@drawable/icon_menu_dots</drawable>
+    <drawable name="iconLightbulb">@drawable/icon_lightbulb</drawable>
+    <drawable name="iconBattery0">@drawable/icon_battery_0</drawable>
+    <drawable name="iconBattery1">@drawable/icon_battery_1</drawable>
+    <drawable name="iconBattery2">@drawable/icon_battery_2</drawable>
+    <drawable name="iconBattery3">@drawable/icon_battery_3</drawable>
+    <drawable name="iconBattery4">@drawable/icon_battery_4</drawable>
+    <drawable name="iconBattery5">@drawable/icon_battery_5</drawable>
+    <drawable name="iconBattery6">@drawable/icon_battery_6</drawable>
+    <drawable name="iconBattery7">@drawable/icon_battery_7</drawable>
+    <drawable name="iconBattery8">@drawable/icon_battery_8</drawable>
+
+
+</resources>

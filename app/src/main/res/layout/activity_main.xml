@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!--    BACKGROUND    -->
+        <LinearLayout
+            android:id="@+id/layer_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground1"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+
+            <!--    HEADER    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20sp"
+                    android:orientation="horizontal"
+                    tools:ignore="NestedWeights,UselessParent">
+
+                    <TextView
+                        android:id="@+id/utils_iconBattery"
+                        android:layout_width="@dimen/sizeIconSmall"
+                        android:layout_height="@dimen/sizeIconSmall"
+                        android:backgroundTint="@color/white"
+                        android:background="@drawable/icon_battery_0"/>
+
+                    <TextView
+                        android:id="@+id/utils_iconBatteryPercent"
+                        android:layout_width="@dimen/sizeIconNormal"
+                        android:layout_height="@dimen/sizeIconSmall"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:text="100%"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="20sp"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/identity2"
+                        android:layout_width="@dimen/sizeIconSmall"
+                        android:layout_height="@dimen/sizeIconSmall"
+                        android:backgroundTint="@color/amarillo7"
+
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        android:background="@drawable/iconLightbulb"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--    BODY    -->
+            <LinearLayout
+                android:id="@+id/layer_bodyMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/identity1"
+                        android:layout_width="200sp"
+                        android:layout_height="200sp"
+                        android:background="@drawable/bg3"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/container_torchOnOff"
+                        android:layout_width="@dimen/sizeIconBig"
+                        android:layout_height="@dimen/sizeIconBig"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:cardBackgroundColor="@color/colorBackground1"
+                        app:cardCornerRadius="@dimen/sizeIconBig"
+                        app:cardElevation="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/button_torchOnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBackground1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/element_torchOnOff"
+                                android:layout_width="@dimen/sizeIconBig"
+                                android:layout_height="@dimen/sizeIconBig"
+                                android:background="@drawable/iconPower"
+                                android:backgroundTint="@color/colorIcons3" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+            <!--    FOOTER    -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/button_torchScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingHorizontal="50sp"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/element_torchScreen"
+                        android:layout_width="@dimen/sizeIconNormal"
+                        android:layout_height="@dimen/sizeIconNormal"
+                        android:background="@drawable/iconPhone"
+                        android:backgroundTint="@color/colorIcons3"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
